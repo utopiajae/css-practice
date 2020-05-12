@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 1px solid red;
+        }
+
+        .container, .about, .sb {
+            background-color: green;
+            width: 1200px;
+            margin: auto;
+            box-sizing: border-box;
+            font-size: 0;
+        }
+
+        .container {
+            background-color: green;
+        }
+
+        .item {
+            background-color: white;
+            height: 380px;
+            margin: 10px;
+            display: inline-block;
+            font-size: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .container .item {
+            width: 380px;
+        }
+
+        .about {
+            background-color: yellow;
+        }
+
+        .about .item {
+            width: 580px;
+        }
+
+        .sb {
+            background-color: blue;
+        }
+
+        .sb .item {
+            width: 280px;
+        }
+
+        p {
+            text-indent: 2em;
+        }
+
+    </style>
+</head>`
+<body>
+
+    <div class="container">
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ratione.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ratione.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ratione.</p>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fugit.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae.</p>
+        </div>
+    </div>
+
+    <div class="sb">
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae.</p>
+        </div>
+        <div class="item">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
