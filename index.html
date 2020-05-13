@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello CSS</title>
 
     <style>
-
         * {
             margin: 0;
             padding: 0;
             outline: 1px solid red;
         }
 
-        .container, .about, .sb {
+        .container,
+        .about,
+        .sb {
             background-color: green;
             width: 1200px;
             margin: auto;
@@ -27,7 +29,7 @@
 
         .item {
             background-color: white;
-            height: 380px;
+            height: 600px;
             margin: 10px;
             display: inline-block;
             font-size: 20px;
@@ -57,21 +59,55 @@
 
         p {
             text-indent: 2em;
+            line-height: 25px;
         }
 
+        h3 {
+            font-size: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .tagImg {
+            position: absolute;
+
+        }
+
+        .postImg {
+            margin: auto;
+            display: block;
+        }
     </style>
 </head>`
+
 <body>
 
     <div class="container">
+        <img class="tagImg" src="https://picsum.photos/30/30/?random=1">
         <div class="item">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ratione.</p>
+            <img class="postImg" src="https://picsum.photos/250/300/?random=1">
+            <h3> Title </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste aliquid soluta id ipsa. Minus,
+                accusamus iste? Possimus aliquid dolorum alias ab quia, repellendus, dignissimos labore sunt omnis
+                assumenda blanditiis.</p>
         </div>
+
+        <img class="tagImg" src="https://picsum.photos/30/30/?random=1">
         <div class="item">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ratione.</p>
+            <img class="postImg" src="https://picsum.photos/250/300/?random=1">
+            <h3> Title </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste aliquid soluta id ipsa. Minus,
+                accusamus iste? Possimus aliquid dolorum alias ab quia, repellendus, dignissimos labore sunt omnis
+                assumenda blanditiis.</p>
         </div>
+        
+        <img class="tagImg" src="https://picsum.photos/30/30/?random=1">
         <div class="item">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, ratione.</p>
+            <img class="postImg" src="https://picsum.photos/250/300/?random=1">
+            <h3> Title </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel iste aliquid soluta id ipsa. Minus,
+                accusamus iste? Possimus aliquid dolorum alias ab quia, repellendus, dignissimos labore sunt omnis
+                assumenda blanditiis.</p>
         </div>
     </div>
 
@@ -98,6 +134,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, quae.</p>
         </div>
     </div>
-    
+
 </body>
+
 </html>
