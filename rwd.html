@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 1px solid red;
+        }
+
+        .sb {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .container {
+            background-color: gray;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 50px;
+        }
+
+        .box {
+            width: 33.33%;
+            box-sizing: border-box;
+            background-color: skyblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .box p {
+            text-align: left;
+        }
+
+        .pic {
+            width: 100%;
+        }
+
+        .container2 {
+            background-color: green;
+            display: flex;
+        }
+
+        .box2 {
+            width: 50%;
+            box-sizing: border-box;
+            background-image: url("https://picsum.photos/400/300/?random=1");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            height: 0;
+            padding-bottom: 50%;
+            position: relative;
+        }
+
+        .box2 img {
+            vertical-align: bottom;
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+
+        @media screen and (max-width: 767px) {
+            .container2 {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sb">
+        <section class="container">
+            <div class="box">
+                <img class="pic" src="https://picsum.photos/600/300/?random=1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet eos corporis magnam enim id est.
+                    Doloremque, magnam placeat. Ad possimus rem laudantium sunt quibusdam, iure distinctio cumque
+                    laboriosam tenetur.</p>
+            </div>
+            <div class="box">
+                <img class="pic" src="https://picsum.photos/600/300/?random=1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet eos corporis magnam enim id est.
+                    Doloremque, magnam placeat. Ad possimus rem laudantium sunt quibusdam, iure distinctio cumque
+                    laboriosam tenetur.</p>
+            </div>
+            <div class="box">
+                <img class="pic" src="https://picsum.photos/600/300/?random=1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet eos corporis magnam enim id est.
+                    Doloremque, magnam placeat. Ad possimus rem laudantium sunt quibusdam, iure distinctio cumque
+                    laboriosam tenetur.</p>
+            </div>
+        </section>
+
+        <div class="container2">
+            <div class="box2">
+                <img src="https://picsum.photos/50/50/?random=1">
+            </div>
+            <div class="box2">
+                <img src="https://picsum.photos/50/50/?random=1">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
