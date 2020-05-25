@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+
+    <style>
+
+        body {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* 空白 = 子層的全部(包含孫子) */
+        .item1 p {
+            color: cornflowerblue;
+        }
+
+        /* 大於 = 子層(不包含孫子) */
+        .item2>p {
+            color: darkblue;
+        }
+
+        /* 蚯蚓 = 同層的後面全部 */
+        .item3~div {
+            color: darkorange;
+        }
+
+        /* 加號 = 同層的後面一個 */
+        .item3+div>div+p:hover {
+            color: blue;
+        }
+
+        .item5:hover p:nth-of-type(1) {
+            color: deeppink;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="item1">
+        <div>A <p>000</p></div>
+        <p>123</p>
+        <p>456</p>
+    </div>
+    <div class="item2">
+        <div>B <p>000</p></div>
+        <p>123</p>
+        <p>456</p>
+    </div>
+    <div class="item3">
+        <div>C</div>
+        <p>123</p>
+        <p>456</p>
+    </div>
+    <div class="item4">
+        <div>D <p>000</p></div>
+        <p>123</p>
+        <p>456</p>
+    </div>
+    <div class="item5">
+        <div>E</div>
+        <p>123</p>
+        <p>456</p>
+    </div>
+
+</body>
+
+</html>

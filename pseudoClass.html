@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+
+    <style>
+
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    
+        .box1{
+            width: 1200px;
+            margin: auto;
+            text-align: center;
+            border: 1px solid black;
+        }
+    
+        a:link{
+            padding: 30px;
+            font-size: 30px;
+            color: green;
+        }
+    
+        a:hover{
+            color: red;
+        }
+        a:visited{
+            color: #ccc;
+        }
+        a:active{
+            color: blue;
+        }
+        a:focus{
+            color: yellow;
+        }
+    
+    
+        .box2{
+            width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+    
+        .box2 .card{
+            width: 30%;
+            
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.yahoo.com">yahoo</a>
+        <a href="http://yam.com.tw">yam</a>
+    </div>
+
+    <div class="box2">
+        <input class="btn_button" type="button" value="按下">
+        <input class="input_text" type="text">
+        <input class="btn_check" type="checkbox" name="" id="">
+
+        <div class="card">
+            <img src="https://picsum.photos/200/300/?random=1">
+            <div class="detail">
+                <h3>title</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil dolore error facere repellat excepturi eius perferendis. Deleniti error ea nisi quas, laboriosam iure architecto quis itaque tenetur! Eum, minima laboriosam.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

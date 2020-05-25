@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+
+    <style>
+
+        .item {
+            width: 300px;
+            height: 150px;
+            background-color: darkgray;
+            margin: 10px;
+        }
+
+        /* 生在目標子層的前面 */
+        .item1::before {
+            content: '加在前面';
+        }
+
+        /* 生在目標子層的後面 */
+        .item1::after {
+            content: '加在後面';
+        }
+
+        #add:checked+.item::after {
+            content: '選取後加在後面';
+        }
+
+        .item3 {
+            position: relative;
+        }
+
+        .hot::after {
+            content: '';
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            background-image: url("https://picsum.photos/50/50/?random=1");
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div class="item item1">A</div>
+        <input type="checkbox" name="" , id="add">
+        <div class="item item2">B</div>
+        <div class="item item3">C</div>
+    </div>
+
+    <script>
+        let item3 = document.getElementsByClassName('item3')[0];
+        item3.addEventListener('click', () => {
+            item3.classList.add('hot');
+        })
+    </script>
+</body>
+
+</html>
