@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            transform-style: preserve-3d;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            margin: -25px 5px;
+        }
+
+        .top,
+        .bot {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .top {
+            margin-top: 100px;
+        }
+
+        .item1 {
+            border: 5px solid blue;
+            transform: rotateY(-1deg);
+        }
+
+        .item2 {
+            border: 5px solid black;
+            transform: rotateY(-1deg);
+        }
+
+        .item3 {
+            border: 5px solid red;
+            transform: rotateY(-1deg);
+        }
+
+        .item4 {
+            top: -60px;
+            left: 53px;
+            border: 5px solid yellow;
+            transform: rotateY(1deg);
+        }
+
+        .item5 {
+            top: -60px;
+            left: 53px;
+            border: 5px solid green;
+            transform: rotateY(1deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="item item1"></div>
+        <div class="item item2"></div>
+        <div class="item item3"></div>
+    </div>
+    <div class="bot">
+        <div class="item item4"></div>
+        <div class="item item5"></div>
+    </div>
+
+</body>
+
+</html>

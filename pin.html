@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello CSS</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            margin: auto;
+        }
+
+        .item-container {
+            display: flex;
+            /* justify-content: center; */
+            width: 280px;
+            margin-top: 25px;
+        }
+
+        .item1,
+        .item2,
+        .item3 {
+            width: 100px;
+            height: 100px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="item1"></div>
+    <div class="item-container">
+        <div class="item2"></div>
+        <div class="item3"></div>
+    </div>
+
+</body>
+
+</html>
